@@ -14,6 +14,14 @@ import code_icon from './code_icon.png'
 import send_icon from './send_icon.png'
 import gemini_icon from './gemini_icon.png'
 import dummy_icon from './dummy.png'
+import egg_icon from './egg_icon.png'
+import chicken_icon from './chicken_icon.png'
+import cow_icon from './cow_icon.png'
+import vegetables_icon from './vegetables_icon.png'
+import fertilizer_icon from './fertilizer_icon.png'
+import cart_icon from './cart_icon.png'
+import storage_icon from './storage_icon.png'
+import syringe_icon from './syringe_icon.png'
 
 export const assets = {
     history_icon,
@@ -31,5 +39,13 @@ export const assets = {
     code_icon,
     send_icon,
     gemini_icon,
-    dummy_icon
+    dummy_icon,
+    egg_icon,
+    chicken_icon,
+    cow_icon,
+    vegetables_icon,
+    fertilizer_icon,
+    cart_icon,
+    storage_icon,
+    syringe_icon
 }

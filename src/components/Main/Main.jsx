@@ -20,7 +20,7 @@ const Main = () => {
   };
 
   const handleKeyDown = (event) => {
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
       onSentApi();
     }
   };
@@ -31,46 +31,49 @@ const Main = () => {
         <p>Assistente da Granja</p>
         <img src={assets.user_icon} alt="" />
       </div>
+
       <div className="main-container">
         <div className="greet">
-          <p><span>Olá produtor!</span></p>
+          <p>
+            <span>Olá produtor!</span>
+          </p>
           <p>Como posso ajudar sua granja hoje?</p>
         </div>
 
         {!showResult ? (
           <>
             <div className="cards">
-              <div className="card" onClick={() => handleCardClick('Como melhorar a produção de ovos?')}>
+              <div className="card" onClick={() => handleCardClick("Como melhorar a produção de ovos?")}>
                 <p>Produção de ovos</p>
-                <img src={assets.compass_icon} alt="" />
+                <img src={assets.egg_icon} alt="Produção de ovos" />
               </div>
-              <div className="card" onClick={() => handleCardClick('Melhores práticas para criação de frangos')}>
+              <div className="card" onClick={() => handleCardClick("Melhores práticas para criação de frangos")}>
                 <p>Criação de frangos</p>
-                <img src={assets.bulb_icon} alt="" />
+                <img src={assets.chicken_icon} alt="Criação de frangos" />
               </div>
-              <div className="card" onClick={() => handleCardClick('Cuidados com a produção de leite')}>
+              <div className="card" onClick={() => handleCardClick("Cuidados com a produção de leite")}>
                 <p>Produção de leite</p>
-                <img src={assets.message_icon} alt="" />
+                <img src={assets.cow_icon} alt="Produção de leite" />
               </div>
-              <div className="card" onClick={() => handleCardClick('Quais hortaliças posso cultivar na granja?')}>
+              <div className="card" onClick={() => handleCardClick("Quais hortaliças posso cultivar na granja?")}>
                 <p>Hortaliças na granja</p>
-                <img src={assets.code_icon} alt="" />
+                <img src={assets.vegetables_icon} alt="Hortaliças" />
               </div>
-              <div className="card" onClick={() => handleCardClick('Como utilizar o esterco como adubo?')}>
+              <div className="card" onClick={() => handleCardClick("Como utilizar o esterco como adubo?")}>
                 <p>Uso do esterco</p>
-                <img src={assets.bulb_icon} alt="" />
+                <img src={assets.fertilizer_icon} alt="Adubo" />
               </div>
-              <div className="card" onClick={() => handleCardClick('Como vender os produtos da granja?')}>
+              <div className="card" onClick={() => handleCardClick("Como vender os produtos da granja?")}>
                 <p>Comercialização</p>
-                <img src={assets.compass_icon} alt="" />
+                <img src={assets.cart_icon} alt="Comercialização" />
               </div>
-              <div className="card" onClick={() => handleCardClick('Como armazenar grãos e rações?')}>
+              <div className="card" onClick={() => handleCardClick("Como armazenar grãos e rações?")}>
                 <p>Armazenamento</p>
-                <img src={assets.message_icon} alt="" />
+                <img src={assets.storage_icon} alt="Armazenamento" />
               </div>
-              <div className="card" onClick={() => handleCardClick('Cuidados com a sanidade animal')}>
+              <div className="card" onClick={() => handleCardClick("Cuidados com a sanidade animal")}>
                 <p>Sanidade animal</p>
-                <img src={assets.code_icon} alt="" />
+                <img src={assets.syringe_icon} alt="Sanidade animal" />
               </div>
             </div>
           </>
