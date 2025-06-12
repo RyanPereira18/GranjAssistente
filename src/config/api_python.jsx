@@ -2,7 +2,7 @@ import axios from "axios";
 const apiKey = import.meta.env.VITE_API_KEY;
 const getPythonData = async (query) => {
     try {
-      const response = await axios.post("https://flaskapigoogleai-d6h6bjcfafejfpfx.brazilsouth-01.azurewebsites.net", {
+      const response = await axios.post("https://flaskapigoogleai-d6h6bjcfafejfpfx.brazilsouth-01.azurewebsites.net/api", {
         consulta: query
       },
       {
